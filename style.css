@@ -1,0 +1,472 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+button{
+    outline: none !important;
+}
+.navbar{
+    background-color: #5cd62c;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-item{
+    color: white !important;
+}
+
+.max-full{
+    width: 90%;
+    margin-left: 5%;   
+}
+
+#why{
+    text-align: center;
+}
+
+.why_list{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why_list > ul{
+    text-align: left;
+}
+
+.why_list > header > h2{
+    text-align: left;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.icon{
+    font-size: 150px;
+    color: #5cd62c;
+}
+
+#testimonials{
+    position: relative;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.quote{
+    text-align: right;
+}
+
+.cst-txt{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+.cst-name{
+    font-weight: 600;
+    text-align: right;
+}
+
+#list-pricing{
+    margin: 40px 0;
+}
+
+.min-text{
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.card{
+    float: left;
+    padding: 20px 0 !important;
+    padding-top: 0px !important;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #5cd62c;
+    color: white;
+    padding: 10px 0;
+}
+
+.card-price{
+    text-align: center;
+    font-size: 40px;
+}
+
+.card-more{
+    text-align: center;
+}
+
+.card-content{
+    padding: 0 5%;
+}
+
+#footer{
+    background-color: #5cd62c;
+    color: white;
+    overflow: auto;
+    padding: 25px 0;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+.hide{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.show{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.other{
+    padding-top: 15px;
+    transition: all 0.3s ease;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: 2px solid white;
+    outline: none;
+    background-color: #5cd62c;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#myBtn:hover {
+    background-color: white;
+    color: #5cd62c;
+    border: 2px solid #5cd62c;
+    transition: all 0.3s ease;
+}
+
+.visual{
+    padding: 25px 0;
+}
+
+.visual img{
+    width: 100%;
+    height: auto;
+}
+
+.map{
+    padding: 25px 0;
+}
+
+#contact{
+    padding-bottom: 25px;
+}
+
+#contact a{
+    color: black !important;
+}
+
+.no-spacing{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/********************************************************************************************************/
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1;
+}
+
+/* Slides */
+.quote {
+    display: none;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 0px;
+    color: #888;
+    font-weight: bold;
+    font-size: 30px;
+    user-select: none;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.prev:hover, .next:hover{
+    background-color: #5cd62c;
+    color: white !important;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.prev{
+    left: 0;
+    margin-left: -20px;
+}
+
+.nav-item:hover{
+    background-color: #70AD47;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/* ANIMATION */
+.slideanim {visibility:hidden;}
+.slideanim-dx {visibility:hidden;}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+.slideDx {
+    animation-name: slideDx;
+    -webkit-animation-name: slideDx;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slideDx {
+    0% {
+        opacity: 0;
+        transform: translateX(-70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes slideDx {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/* END ANIMATION */
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    color: black;
+    right: 0;
+    margin-right: -20px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/**************************************************************************************************/
+
+@media(max-width:767px){
+    .card{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.25)!important;
+    }
+
+    .prev, .next{
+        display: none;
+    }
+}
+
+@media(max-width:991px){
+
+    @keyframes slide {
+        0% {
+            opacity: 0;
+            transform: translateY(70%);
+        } 
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slide {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+        } 
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+        }
+    }
+
+    @keyframes slideDx {
+        0% {
+            opacity: 0;
+            transform: translateY(70%);
+        } 
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slideDx {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+        } 
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+        }
+    }
+}
+
+@media(min-width:768px){
+    .quote{
+        height: 200px;
+    }
+}
+
+@media(min-width:992px){
+
+    .quote{
+        height: 150px;
+    }
+
+    .visual{
+        width: 100%;
+    }
+
+    .reason{
+        display: block;
+        /*display: flex;*/
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    .reason-txt{
+        float: left;
+        vertical-align: middle;
+        top: 50px;
+    }
+
+    .icon{
+        float: left;
+    }
+
+    .max-full{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .left{
+        float: left;
+    }
+
+    .right{
+        float: right;
+    }
+
+    .card:hover{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.25)!important;
+        flex: 0 0 28%;
+        max-width: 28%;
+        transition: all 0.3s ease;
+    }
+
+}
