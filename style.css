@@ -1,3 +1,8 @@
+:root {
+  --main: #f77810;
+  --black: #1d1d1d;
+}
+
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -15,11 +20,15 @@ button{
     outline: none !important;
 }
 .navbar{
-    background-color: #5cd62c;
+    background-color: var(--main);
 }
 
 .navbar-brand{
     color: white !important;
+}
+
+.navbar-brand img{
+    max-width: 150px;
 }
 
 .nav-item{
@@ -59,7 +68,7 @@ button{
 
 .icon{
     font-size: 150px;
-    color: #5cd62c;
+    color: var(--main);
 }
 
 #testimonials{
@@ -107,7 +116,7 @@ button{
     text-align: center;
     font-size: 28px;
     font-weight: 600;
-    background-color: #5cd62c;
+    background-color: var(--main);
     color: white;
     padding: 10px 0;
 }
@@ -115,6 +124,7 @@ button{
 .card-price{
     text-align: center;
     font-size: 40px;
+    padding: 0 10px;
 }
 
 .card-more{
@@ -126,7 +136,7 @@ button{
 }
 
 #footer{
-    background-color: #5cd62c;
+    background-color: var(--main);
     color: white;
     overflow: auto;
     padding: 25px 0;
@@ -164,7 +174,7 @@ button{
     font-size: 18px;
     border: 2px solid white;
     outline: none;
-    background-color: #5cd62c;
+    background-color: var(--main);
     color: white;
     cursor: pointer;
     width: 50px;
@@ -174,8 +184,8 @@ button{
 
 #myBtn:hover {
     background-color: white;
-    color: #5cd62c;
-    border: 2px solid #5cd62c;
+    color: var(--main);
+    border: 2px solid var(--main);
     transition: all 0.3s ease;
 }
 
@@ -236,7 +246,7 @@ button{
 }
 
 .prev:hover, .next:hover{
-    background-color: #5cd62c;
+    background-color: var(--main);
     color: white !important;
     border-radius: 100%;
     transition: all 0.3s ease;
@@ -248,7 +258,7 @@ button{
 }
 
 .nav-item:hover{
-    background-color: #70AD47;
+    background-color: var(--main);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
